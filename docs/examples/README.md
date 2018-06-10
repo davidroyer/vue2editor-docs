@@ -7,7 +7,7 @@ sidebar: auto
 
 ## Basic Setup
 
-```html
+```vue
 <template>
    <div id="app">
      <vue-editor v-model="content"></vue-editor>
@@ -43,7 +43,7 @@ You can see below that 3 parameters are passed.
 
 **NOTE** In addition to this example, I have created a [ example repo](https://github.com/davidroyer/vue2editor-images) demonstrating this new feature with an actual server.
 
-```html
+```vue
 <template>
   <div id="app">
     <vue-editor id="editor"
@@ -98,7 +98,7 @@ You can see below that 3 parameters are passed.
 
 ## Set Contents After Page Load
 
-```html
+```vue
 <template>
   <div id="app">
     <button @click="setEditorContent">Set Editor Contents</button>
@@ -131,7 +131,7 @@ You can see below that 3 parameters are passed.
 
 ## Using Multiple Editors
 
-```html
+```vue
 <template>
   <div id="app">
     <vue-editor id="editor1" v-model="editor1Content"></vue-editor>
@@ -165,7 +165,7 @@ You can see below that 3 parameters are passed.
 
 ## Custom Toolbar
 
-```html
+```vue
 <template>
   <div id="app">
     <vue-editor v-model="content" :editorToolbar="customToolbar"></vue-editor>
@@ -196,7 +196,7 @@ You can see below that 3 parameters are passed.
 
 ## Saving The Content
 
-```html
+```vue
 <template>
   <div id="app">
     <button @click="saveContent"></button>
@@ -230,7 +230,7 @@ You can see below that 3 parameters are passed.
 
 ## Use a Live Preview
 
-```html
+```vue
 <template>
   <div id="app">
     <vue-editor v-model="content"></vue-editor>
@@ -269,7 +269,7 @@ Vue2Editor now exports Quill to assist in this process.
 4. Add the necessary configuration to the `editorOptions` object
 
 
-```html
+```vue
 <template>
   <div id="app">
     <vue-editor
@@ -312,7 +312,7 @@ Vue2Editor now exports Quill to assist in this process.
 2. Use the `customModules` prop to declare an array of module(s).
 3. Add the necessary configuration for those modules in the `editorOptions` object under modules as seen below
 
-```html
+```vue
 <template>
   <div id="app">
     <vue-editor

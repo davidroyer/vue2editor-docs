@@ -19,7 +19,7 @@ new webpack.ProvidePlugin({
 
 Give the editor instance a `ref` property
 
-```html
+```vue
 <template>
   <button @click.prevent="focusEditor">Focus Editor</button>
   <vue-editor
@@ -41,7 +41,7 @@ Give the editor instance a `ref` property
 
 ## Listening For Events - (focus, blur, selection-change)
 
-```html
+```vue
 <template>
   <vue-editor
     @focus="onEditorFocus"
@@ -69,3 +69,7 @@ Give the editor instance a `ref` property
   }
 </script>
 ```
+
+## Usage Via CDN
+
+https://cdn.jsdelivr.net/npm/vue2-editor@2.5.0/dist/vue2-editor.min.js
