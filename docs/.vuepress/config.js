@@ -7,7 +7,8 @@ module.exports = {
     nav: [
       { text: "Home", link: "/" },
       { text: "Getting Started", link: "/getting-started/" },
-      { text: "Examples", link: "/examples/" }
+      { text: "Examples", link: "/examples/" },
+      { text: "FAQ", link: "/faq/" }
     ]
-  }  
+  }
 };
