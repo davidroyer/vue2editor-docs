@@ -3,7 +3,7 @@ module.exports = {
   description: "Your editor for rich text editing built with Vue.js and Quill.js",
   themeConfig: {
     editLinks: true,
-    sidebar: 'auto',
+    // sidebar: 'auto',
     docsDir: "docs",
     nav: [
       { text: "Guide", link: "/guide/" },

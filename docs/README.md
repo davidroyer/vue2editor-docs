@@ -12,5 +12,6 @@ features:
     details: Offers the options you need for more complex scenarios
 footer: MIT Licensed | Copyright © 2016-present David Royer
 ---
+
 <!--
 # Header Level 1 inside Readme -->

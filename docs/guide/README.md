@@ -1,5 +1,5 @@
 ---
-
+sidebar: auto
 ---
 
 # Getting Started
