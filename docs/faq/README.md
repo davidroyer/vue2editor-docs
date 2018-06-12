@@ -1,5 +1,5 @@
 ---
-sidebar: auto
+
 ---
 
 # Scenarios Frequently Asked About
