@@ -259,6 +259,17 @@ You can see below that 3 parameters are passed.
 ## How To Use Custom Quill Modules
 There are 2 ways of using custom modules with Vue2Editor. This is partly because there have been cases in which errors are thrown when importing and attempting to declare custom modules, and partly because I believe it actually separates the concerns nicely.
 
+::: tip
+*If you have errors when using custom modules,
+try adding this to your webpack config*
+```js
+new webpack.ProvidePlugin({
+	'window.Quill': 'quill/dist/quill.js',
+	'Quill': 'quill/dist/quill.js',
+}),
+```
+:::
+
 
 ### Version 1 - ***Import and Register Yourself***
 
@@ -275,6 +286,7 @@ Vue2Editor now exports Quill to assist in this process.
     <vue-editor
       :editorOptions="editorSettings"
       v-model="content">
+    </vue-editor>
   </div>
 </template>
 
@@ -346,6 +358,61 @@ Vue2Editor now exports Quill to assist in this process.
           }
         }        
       }
+    }
+  }
+</script>
+```
+
+## Setting Focus on Editor Programmatically
+
+Give the editor instance a `ref` property
+
+```vue
+<template>
+  <button @click.prevent="focusEditor">Focus Editor</button>
+  <vue-editor
+    ref="editor"
+    v-model="editor2Content">
+  </vue-editor>
+</template>
+
+<script type="text/javascript">
+  export default {
+    methods: {
+      focusEditor() {
+        this.$refs.editor.quill.focus();
+      },
+    }
+  }
+</script>
+```
+
+## Listening For Events
+
+```vue
+<template>
+  <vue-editor
+    @focus="onEditorFocus"
+    @blur="onEditorBlur"
+    @selection-change="onSelectionChange"
+    v-model="editor2Content">
+  </vue-editor>
+</template>
+
+<script type="text/javascript">
+  export default {
+    methods: {
+      onEditorBlur(quill) {
+        console.log('editor blur!', quill)
+      },
+
+      onEditorFocus(quill) {
+        console.log('editor focus!', quill)
+      },
+
+      onSelectionChange(range) {
+        console.log('selection change!', range);
+      }      
     }
   }
 </script>

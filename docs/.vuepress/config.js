@@ -8,7 +8,7 @@ module.exports = {
     nav: [
       { text: "Guide", link: "/guide/" },
       { text: "Examples", link: "/examples/" },
-      { text: "FAQ", link: "/faq/" },
+      // { text: "FAQ", link: "/faq/" },
       { text: "Github", link: "https://github.com/davidroyer/vue2-editor" }
     ]
   }
