@@ -2,6 +2,12 @@
 sidebar: auto
 ---
 
+## Extra Examples
+
+- Setting editor height
+- Array for custom toolbar
+- element `id` for custom toolbar
+
 # FAQ
 
 ## Usage Via CDN

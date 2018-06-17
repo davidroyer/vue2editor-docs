@@ -1,6 +1,8 @@
 module.exports = {
   title: "Vue2Editor",
-  description: "Your editor for rich text editing built with Vue.js and Quill.js",
+  description:
+    "Your editor for rich text editing built with Vue.js and Quill.js",
+  ga: "UA-56060335-4",
   themeConfig: {
     editLinks: true,
     // sidebar: 'auto',
@@ -13,3 +15,4 @@ module.exports = {
     ]
   }
 };
+UA - 56060335 - 4;
