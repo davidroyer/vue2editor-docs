@@ -4,6 +4,7 @@ module.exports = {
     "Your editor for rich text editing built with Vue.js and Quill.js",
   ga: "UA-56060335-4",
   themeConfig: {
+    sidebar: "auto",
     editLinks: true,
     // sidebar: 'auto',
     docsDir: "docs",
